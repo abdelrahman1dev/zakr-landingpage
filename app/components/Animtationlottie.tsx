@@ -17,7 +17,7 @@ const LottiePlayer = () => {
   if (!animationData) return <p>loading</p>;
 
   return (
-    <div className='lg:w-1/2 '>
+    <div className='lg:w-[550px] '>
       <Lottie animationData={animationData} loop={true} autoplay={true} />
     </div>
   );

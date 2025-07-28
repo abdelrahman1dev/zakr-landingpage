@@ -6,7 +6,7 @@ import Buttoncomp from './Button';
 const Cta = ({className} : {className?: string}) => {
   return (
     
-      <Buttoncomp title='register now!' className='cursor-pointer'/>
+      <Buttoncomp title='register now!' className={`cursor-pointer ${className}`}/>
  
   );
 };
