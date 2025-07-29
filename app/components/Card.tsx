@@ -12,7 +12,7 @@ import {
 interface CardProps {
   className?: string;
   title: string;
-  description: string;
+  description: any;
   SVG?: React.ReactNode;
   bg: string;
   children?:  React.JSX.Element;
@@ -21,15 +21,15 @@ interface CardProps {
 function CardComponent({className, title, description ,SVG, bg, children} : CardProps) {
   return (
     <div className={className}>
-      <Card className={`border-white h-43  ${bg}`}>
+      <Card className={`border-white   ${bg}`}>
         <CardHeader>
             <CardAction className='text-white hover:text-gray-200'>
             {SVG }
             </CardAction>
           <CardTitle className=''>{title}</CardTitle>
         </CardHeader>
-        <CardContent className='max-w-sm'>
-          <CardDescription >{description}</CardDescription>
+        <CardContent className=''>
+          <CardDescription  className=''>{description}</CardDescription>
           {children}
         </CardContent>
       </Card>

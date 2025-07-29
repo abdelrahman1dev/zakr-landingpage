@@ -76,13 +76,13 @@ const Nav = () => {
         
         <Buttoncomp 
           title="" 
-          className="z-1000 lg:hidden bg-transparent cursor-pointer" 
+          className={`z-1000 lg:hidden bg-transparent cursor-pointer ${isScrolled ? 'text-primary' : 'text-white'}`} 
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X /> : <Menu />}
         </Buttoncomp>
-        
-        <Circle className='rounded-es-full w-18 h-18 lg:hidden top-0 right-0 ' />
+
+        <Circle className={`rounded-es-full w-18 h-18 lg:hidden top-0 right-0 ${isScrolled ? 'hidden' : ''}`} />
       </nav>
     </>
   );
