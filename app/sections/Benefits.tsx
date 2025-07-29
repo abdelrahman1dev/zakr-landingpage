@@ -2,7 +2,7 @@ import React from 'react'
 import CardComponent from '../components/Card'
 import Cta from '../components/Cta'
 
-function Benefits({className} : {className?: any}) {
+function Benefits({className} : {className?: string}) {
   return (
     <div className='lg:px-20 px-2 py-8 w-full flex flex-col items-center justify-center'>
       <h1 className='text-5xl p-2 font-bold mb-4 text-black '> Why choose <span className='highlight'>this</span> system?</h1>

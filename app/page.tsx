@@ -1,7 +1,6 @@
 import './globals.css';
 import Benefits from './sections/Benefits';
 import Herosection from './sections/Herosection';
-import HowItWorks from './sections/Howitworks';
 import Pricing from './sections/Pricing';
 
 

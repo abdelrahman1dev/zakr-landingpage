@@ -4,7 +4,6 @@ import {
   CardAction,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
@@ -12,7 +11,7 @@ import {
 interface CardProps {
   className?: string;
   title: string;
-  description: any;
+  description: React.JSX.Element | string;
   SVG?: React.ReactNode;
   bg: string;
   children?:  React.JSX.Element;
