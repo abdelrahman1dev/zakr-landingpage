@@ -1,11 +1,12 @@
 import React from 'react'
 import CardComponent from '../components/Card'
 import 'boxicons/css/boxicons.min.css';
+import { SquareArrowUpRight } from 'lucide-react';
 
 function Pricing() {
   return (
-    <div className='text-center flex flex-col items-center justify-center py-20 lg:p-20 p-2 bg-gradient-to-b from-blue-100 to-white '>
-        <h1 className='text-4xl font-bold mb-10 text-black  lg:w-full w-[80%] '>choose the right plan for you</h1>
+    <div className='text-left flex flex-col items-center justify-center py-20 lg:p-20 p-2 bg-gradient-to-b from-blue-100 to-white '>
+        <h1 className='text-4xl font-bold mb-20 text-black  lg:w-full w-[80%] '>choose the right plan for you!</h1>
         <div className='grid lg:grid-cols-3 grid-cols-1 gap-5 lg:w-[80%] w-full'>
             <CardComponent
             title='starter'
@@ -61,8 +62,7 @@ function Pricing() {
             />
         </div>
            <h4 className="text-sm  leading-5 font-semibold my-6 text-primary "> 
-       Special discounts available for schools & institutions <a href="#" className="text-blue-500 underline ">learn more <i className="fa-regular fa-arrow-up-right-from-square"></i>
-       </a>
+       Special discounts available for schools & institutions <a href="#" className="text-blue-500 underline ">learn more<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-square-arrow-up-right-icon lucide-square-arrow-up-right"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M8 8h8v8"/><path d="m8 16 8-8"/></svg></a>
 
       </h4>
 
