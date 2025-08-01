@@ -6,7 +6,7 @@ import { SquareArrowUpRight } from 'lucide-react';
 function Pricing() {
   return (
     <div className='text-left flex flex-col items-center justify-center py-20 lg:p-20 p-2 bg-gradient-to-b from-blue-100 to-white '>
-        <h1 className='text-4xl font-bold mb-20 text-black  lg:w-full w-[80%] '>choose the right plan for you!</h1>
+        <h1 className='text-4xl font-bold mb-20 text-black  lg:w-full  '>choose the right plan for you!</h1>
         <div className='grid lg:grid-cols-3 grid-cols-1 gap-5 lg:w-[80%] w-full'>
             <CardComponent
             title='starter'

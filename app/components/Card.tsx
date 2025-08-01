@@ -7,10 +7,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import Image, { StaticImageData } from 'next/image';
 
 interface CardProps {
   className?: string;
   title: string;
+  img?: StaticImageData;
   description: React.JSX.Element | string;
   icon?: React.ComponentType<{ className?: string }>; // ✅ Correct type for Lucide icons
   variant?: 'default' | 'featured';
@@ -22,6 +24,7 @@ function CardComponent({
   className = '', 
   title, 
   description, 
+  img,
   icon: IconComponent, // ✅ Destructure and rename
   variant = 'default',
   children,
@@ -42,6 +45,9 @@ function CardComponent({
           <div className="w-12 h-12 mb-4 p-2.5 bg-white/20 rounded-lg backdrop-blur-sm group-hover:bg-white/30 transition-all duration-300">
             <IconComponent className="w-full h-full text-white" /> {/* ✅ Render as component */}
           </div>
+        )}
+        {img && (
+          <Image src={img} width={100} height={100} alt={title} className="w-full h-32 object-cover mb-4" />
         )}
         <CardTitle className="text-xl sm:text-2xl font-bold leading-tight">
           {title}
