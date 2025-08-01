@@ -27,6 +27,8 @@ function Steps() {
         <Image
           src={'../assets/toLeft-arrow.png'}
           alt="Left Arrow"
+          width={32}
+          height={32}
           className="absolute right-68 lg:w-full w-40 lg:right-72 top-20"
         />
       </motion.div>
@@ -40,6 +42,8 @@ function Steps() {
       >
         <h1 className="text-xl font-bold text-center">track</h1>
         <Image
+          width={32}
+          height={32}
           src={'../assets/toRight-arrow.png'}
           alt="Right Arrow"
           className="absolute left-68 lg:w-full w-40 lg:left-72 top-20"
