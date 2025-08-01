@@ -11,7 +11,7 @@ type MyComponentProps = {
 
 const Buttoncomp = ({ title, className, children, onClick }: MyComponentProps) => {
   return (
-    <Button className={`${className} hover:opacity-55`} onClick={onClick}>
+    <Button className={`${className} hover:opacity-55 cursor-pointer`} onClick={onClick}>
       {children ? children : title}
     </Button>
   );
