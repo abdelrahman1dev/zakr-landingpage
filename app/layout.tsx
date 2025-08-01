@@ -10,12 +10,16 @@ export const metadata: Metadata = {
   description: "A platform for educational resources and tools",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  
   return (
+    
     <html lang="en">
       <body
         className={`font-custom antialiased overflow-x-hidden capitalize `}

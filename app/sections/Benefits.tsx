@@ -4,11 +4,11 @@ import CardComponent from '../components/Card'
 import { features } from '../constants/features'
 import Cta from '../components/Cta'
 
-function Benefits({ className = '' }: { className?: string }) {
+function Benefits({ className = 'grid lg:grid-cols-[repeat(4,1fr)]  lg:grid-rows-[repeat(1,1fr)]  grid-cols-2 grid-rows-4 gap-1 lg:gap-2 lg:w-full' }: { className?: string }) {
 
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 py-12">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 py-12" id='services'>
       <h2 className=" text-black text-4xl font-bold mb-12 text-left">Why Choose <span className="highlight">This</span> System?</h2>
 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-[minmax(220px,_auto)]">
   {features.map((feature, index) => (

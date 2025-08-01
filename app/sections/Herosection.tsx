@@ -6,7 +6,7 @@ import Buttoncomp from '../components/Button';
 
 const Herosection = () => {
   return (
-    <section className=" -z-10 relative lg:justify-between  py-20 px-6 text-left  lg:px-20 lg:py-0 flex flex-col items-start lg:flex-row lg:items-center lg:w-full">
+    <section id='home' className=" -z-10 relative lg:justify-between  py-20 px-6 text-left  lg:px-20 lg:py-0 flex flex-col items-start lg:flex-row lg:items-center lg:w-full">
       <div className='z-100 lg:w-1/2 '>
       <h4 className="text-md  leading-5 font-semibold mb-4 text-primary"> 
         #1 for your academic journey
