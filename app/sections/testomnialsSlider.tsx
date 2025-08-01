@@ -10,13 +10,18 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import FadeInWhenInView from '../components/FadeInWhenInView';
 
 export default function ReviewCarousel() {
   return (
     <section className="w-full relative max-w-4xl px-2 lg:px-0   mx-auto py-12">
-      <h2 className="text-black text-4xl font-bold mb-12 text-left">
-        What people think about <span  className='highlight'>us</span>?
+      <FadeInWhenInView duration={0.8} delay={0}>
+           <h2 className="text-black text-4xl font-bold mb-12 text-left">
+        What people thinks about <span  className='highlight'>us</span>?
       </h2>
+      </FadeInWhenInView>
+
+      {/* Background Decoration */}
 
       {/* Prev Button */}
       <div className="absolute -left-6 top-1/2 -translate-y-1/2 z-10 hidden sm:block">

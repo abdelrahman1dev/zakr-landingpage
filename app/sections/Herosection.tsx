@@ -3,11 +3,13 @@ import Cta from '../components/Cta';
 import Circle from '../components/Circle';
 import LottiePlayer from '../components/Animtationlottie';
 import Buttoncomp from '../components/Button';
+import FadeInWhenInView from '../components/FadeInWhenInView';
 
 const Herosection = () => {
   return (
     <section id='home' className=" -z-10 relative lg:justify-between  py-20 px-6 text-left  lg:px-20 lg:py-0 flex flex-col items-start lg:flex-row lg:items-center lg:w-full">
-      <div className='z-100 lg:w-1/2 '>
+      <FadeInWhenInView direction='left' duration={0.8} delay={0.2}>
+              <div className='z-100  '>
       <h4 className="text-md  leading-5 font-semibold mb-4 text-primary"> 
         #1 for your academic journey
       </h4>
@@ -22,8 +24,12 @@ const Herosection = () => {
       lg:top-40 lg:left-23
       '/>
       </div>
+        </FadeInWhenInView>
 
-      <LottiePlayer />
+
+      <FadeInWhenInView direction='right' duration={0.8} delay={0.2} >
+        <LottiePlayer />
+      </FadeInWhenInView>
     </section>
   );
 

@@ -38,7 +38,7 @@ const Nav = () => {
     const sectionIds = ['home', 'pricing', 'services', 'contact','FAQs'];
 
     const handleScrollSpy = () => {
-      const scrollY = window.scrollY + 100;
+      const scrollY = window.scrollY + 400;
 
       let current: string | null = null;
 
@@ -94,11 +94,11 @@ const Nav = () => {
             <hr className="border-primary w-full lg:hidden" />
             <Navli title="Pricing" href="#pricing" isActive={activeSection === 'pricing'} className=" lg:hover:text-blue-500" />
             <hr className="border-primary w-full lg:hidden" />
-        
+              <Navli title="FAQs" href="#FAQs" isActive={activeSection === 'FAQs'} className=" lg:hover:text-blue-500" />
+            <hr className="border-primary w-full lg:hidden" />
             <Navli title="Contact" href="#contact" isActive={activeSection === 'contact'} className=" lg:hover:text-blue-500" />
             <hr className="border-primary w-full lg:hidden" />
-            <Navli title="FAQs" href="#FAQs" isActive={activeSection === 'FAQs'} className=" lg:hover:text-blue-500" />
-            <hr className="border-primary w-full lg:hidden" />
+          
           </ul>
           <Cta />
         </div>
