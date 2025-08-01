@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import Image from 'next/image';
 
 function Steps() {
   const planRef = useRef(null);
@@ -11,14 +12,7 @@ function Steps() {
   const trackInView = useInView(trackRef, { once: false, margin: '-20px' });
   const succeedInView = useInView(succeedRef, { once: false, margin: '-20px' });
 
-  const cardVariants = {
-    hidden: { opacity: 0, x: 30 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: { duration: 0.8, ease: 'easeOut' },
-    },
-  };
+
 
   return (
     <section className="relative flex items-center justify-center w-full h-[250vh]">
@@ -30,7 +24,7 @@ function Steps() {
         className="bg-card w-60 h-68 rounded-lg absolute top-5 lg:right-80 flex items-center justify-center text-white"
       >
         <h1 className="text-xl font-bold text-center">plan</h1>
-        <img
+        <Image
           src={'../assets/toLeft-arrow.png'}
           alt="Left Arrow"
           className="absolute right-68 lg:w-full w-40 lg:right-72 top-20"
@@ -45,7 +39,7 @@ function Steps() {
         className="bg-card w-60 h-68 rounded-lg absolute top-110 lg:left-80 left-5 flex items-center justify-center text-white"
       >
         <h1 className="text-xl font-bold text-center">track</h1>
-        <img
+        <Image
           src={'../assets/toRight-arrow.png'}
           alt="Right Arrow"
           className="absolute left-68 lg:w-full w-40 lg:left-72 top-20"

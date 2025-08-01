@@ -5,7 +5,7 @@ import { features } from '../constants/features'
 import Cta from '../components/Cta'
 import FadeInWhenInView from '../components/FadeInWhenInView'
 
-function Benefits({ className = 'grid lg:grid-cols-[repeat(4,1fr)]  lg:grid-rows-[repeat(1,1fr)]  grid-cols-2 grid-rows-4 gap-1 lg:gap-2 lg:w-full' }: { className?: string }) {
+function Benefits() {
 
 
   return (

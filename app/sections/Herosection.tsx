@@ -1,5 +1,4 @@
 import React from 'react';
-import Cta from '../components/Cta';
 import Circle from '../components/Circle';
 import LottiePlayer from '../components/Animtationlottie';
 import Buttoncomp from '../components/Button';

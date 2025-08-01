@@ -42,7 +42,7 @@ const Nav = () => {
 
       let current: string | null = null;
 
-      for (let id of sectionIds) {
+      for (const id of sectionIds) {
         const section = document.getElementById(id);
         if (section) {
           const offsetTop = section.offsetTop;

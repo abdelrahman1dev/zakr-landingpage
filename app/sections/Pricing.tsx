@@ -1,7 +1,6 @@
 import React from 'react'
 import CardComponent from '../components/Card'
 import 'boxicons/css/boxicons.min.css';
-import { SquareArrowUpRight } from 'lucide-react';
 import FadeInWhenInView from '../components/FadeInWhenInView';
 
 function Pricing() {
