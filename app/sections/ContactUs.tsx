@@ -2,9 +2,9 @@ import React from 'react'
 
 function ContactUs() {
   return (
-    <section className='text-left w-[80%] mx-auto flex flex-col items-center justify-center py-20 lg:p-20 p-2  bg-card rounded-4xl my-5' id='contact'>
+    <section className='text-left w-[80%] mx-auto flex flex-col items-start lg:items-center justify-center py-20 lg:p-20 p-5  bg-card rounded-4xl my-5' id='contact'>
       <h1 className='text-4xl font-bold mb-2 text-white'>Wanna get in touch?</h1>
-      <p className='text-lg mb-3 text-white highlight'>enter your email here!</p>
+      <p className=' text-lg mb-3 text-white highlight'>enter your email here!</p>
       <form className='w-full max-w-md'>
         <div className='mb-4'>
           <label htmlFor='email' className='block text-sm font-medium text-gray-300'>Email</label>

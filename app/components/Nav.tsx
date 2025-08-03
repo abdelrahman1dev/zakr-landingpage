@@ -88,15 +88,15 @@ const Nav = () => {
         >
           <ul className="gap-5 mb-10 lg:mb-0 text-black flex flex-col text-left mt-20 lg:flex-row lg:mt-0 lg:gap-8 lg:text-center lg:items-center">
             
-            <Navli title="Home" href="#home" isActive={activeSection === 'home'} className=" lg:hover:text-blue-500" />
+            <Navli title="Home" onClick={() => setIsOpen(!isOpen)} href="#home" isActive={activeSection === 'home'} className=" lg:hover:text-blue-500" />
             <hr className="border-primary w-full lg:hidden" />
-                <Navli title="Services" href="#services" isActive={activeSection === 'services'} className=" lg:hover:text-blue-500" />
+            <Navli title="Services" onClick={() => setIsOpen(!isOpen)} href="#services" isActive={activeSection === 'services'} className=" lg:hover:text-blue-500" />
             <hr className="border-primary w-full lg:hidden" />
-            <Navli title="Pricing" href="#pricing" isActive={activeSection === 'pricing'} className=" lg:hover:text-blue-500" />
+            <Navli title="Pricing" onClick={() => setIsOpen(!isOpen)} href="#pricing" isActive={activeSection === 'pricing'} className=" lg:hover:text-blue-500" />
             <hr className="border-primary w-full lg:hidden" />
-              <Navli title="FAQs" href="#FAQs" isActive={activeSection === 'FAQs'} className=" lg:hover:text-blue-500" />
+              <Navli title="FAQs" onClick={() => setIsOpen(!isOpen)} href="#FAQs" isActive={activeSection === 'FAQs'} className=" lg:hover:text-blue-500" />
             <hr className="border-primary w-full lg:hidden" />
-            <Navli title="Contact" href="#contact" isActive={activeSection === 'contact'} className=" lg:hover:text-blue-500" />
+            <Navli title="Contact" onClick={() => setIsOpen(!isOpen)} href="#contact" isActive={activeSection === 'contact'} className=" lg:hover:text-blue-500" />
             <hr className="border-primary w-full lg:hidden" />
           
           </ul>

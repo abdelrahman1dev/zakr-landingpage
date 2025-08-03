@@ -22,7 +22,7 @@ function Benefits() {
         w-full h-full
       `}
     >
-      <FadeInWhenInView direction='up' duration={0.8} delay={index * 0.2} className={`h-full ${index === 0 ? 'bg-card' : ''}`}>
+      <FadeInWhenInView direction='up' duration={0.8} delay={index * 0.2} className={`h-full`}>
               <CardComponent
         title={feature.title}
         description={feature.description}
