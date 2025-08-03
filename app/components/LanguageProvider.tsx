@@ -1,10 +1,75 @@
 "use client"
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
 
+interface TranslationData {
+  landingPage: {
+    metadata: {
+      title: string
+      description: string
+    }
+    navbar: {
+      logo: string
+      home: string
+      Services: string
+      Pricing: string
+      FAQs: string
+      Contact: string
+    }
+    heroSection: {
+      heroTitle: string
+      heroSubtitle: string
+      heroSubtitle2: string
+      heroButton: string
+    }
+    benefitsSection: {
+      title: string
+      features: Record<string, { title: string; description: string }>
+    }
+    pricingSection: {
+      title: string
+      starterPlan: {
+        title: string
+        price: string
+        features: Record<string, string>
+        buttonText: string
+      }
+      premiumPlan: {
+        title: string
+        price: string
+        features: Record<string, string>
+        buttonText: string
+      }
+      elitePlan: {
+        title: string
+        price: string
+        features: Record<string, string>
+        buttonText: string
+      }
+      specialDiscount: string
+      learnMore: string
+    }
+    faqSection: {
+      title: string
+      questions: Record<string, { question: string; answer: string }>
+    }
+    ctaSection: {
+      subtitle: string
+      title: string
+      description: string
+      registerButton: string
+      learnMoreButton: string
+    }
+    testimonialSection: {
+      title: string
+      reviews: Record<string, { name: string; review: string }>
+    }
+  }
+}
+
 interface LanguageContextProps {
   locale: 'en' | 'ar'
   changeLanguage: (locale: 'en' | 'ar') => void
-  translations: any
+  translations: TranslationData
   loading: boolean
   isRTL: boolean
 }
@@ -13,7 +78,7 @@ const LanguageContext = createContext<LanguageContextProps | undefined>(undefine
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [locale, setLocale] = useState<'en' | 'ar'>('en')
-  const [translations, setTranslations] = useState<any>({})
+  const [translations, setTranslations] = useState<TranslationData>({} as TranslationData)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {

@@ -9,7 +9,7 @@ import FAQs from './sections/FAQs'
 import Herosection from './sections/Herosection'
 import Pricing from './sections/Pricing'
 import TestimonialsSlider from './sections/testomnialsSlider'
-import LanguageSwitcher from './components/LanguageSwitcher'
+
 
 export default function Home() {
   const { locale, isRTL, loading } = useTranslation()

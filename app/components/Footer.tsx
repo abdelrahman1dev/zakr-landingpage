@@ -40,10 +40,6 @@ const defaultSocialLinks = [
   { icon: <FaLinkedin className="size-5" />, href: "#", label: "LinkedIn" },
 ];
 
-const defaultLegalLinks = [
-  { name: "Terms and Conditions", href: "#" },
-  { name: "Privacy Policy", href: "#" },
-];
 
 const Footer7 = ({
 
