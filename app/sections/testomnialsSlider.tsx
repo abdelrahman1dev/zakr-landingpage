@@ -11,13 +11,15 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import FadeInWhenInView from '../components/FadeInWhenInView';
+import { useTranslation } from '../hooks/useTranslation';
 
 export default function ReviewCarousel() {
+  const { t } = useTranslation();
   return (
     <section className="w-full relative max-w-4xl px-2 lg:px-0   mx-auto py-12">
       <FadeInWhenInView duration={0.8} delay={0}>
            <h2 className="text-black text-4xl font-bold mb-12 text-left">
-        What people thinks about <span  className='highlight'>us</span>?
+        {t('landingPage.testimonialSection.title')}
       </h2>
       </FadeInWhenInView>
 
@@ -68,8 +70,8 @@ export default function ReviewCarousel() {
                 className="rounded-full w-16 h-16 mb-4 object-cover"
               />
               <CardContent className="space-y-2 text-black">
-                <h3 className="text-lg font-semibold">{review.name}</h3>
-                <p className="text-sm">{review.review}</p>
+                <h3 className="text-lg font-semibold">{t(`landingPage.testimonialSection.reviews.p${review.id}.name`)}</h3>
+                <p className="text-sm">{t(`landingPage.testimonialSection.reviews.p${review.id}.text`)}</p>
               </CardContent>
             </Card>
           </SwiperSlide>

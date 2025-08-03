@@ -5,11 +5,14 @@ import Buttoncomp from './Button';
 import { X, Menu } from 'lucide-react';
 import Navli from './Navli';
 import Circle from './Circle';
+import LanguageSwitcher from './LanguageSwitcher';
+import { useTranslation } from '../hooks/useTranslation';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState<string | null>(null);
+  const { t } = useTranslation();
 
   // Detect scroll for sticky nav style
   useEffect(() => {
@@ -38,7 +41,7 @@ const Nav = () => {
     const sectionIds = ['home', 'pricing', 'services', 'contact','FAQs'];
 
     const handleScrollSpy = () => {
-      const scrollY = window.scrollY + 400;
+      const scrollY = window.scrollY + 200;
 
       let current: string | null = null;
 
@@ -75,7 +78,7 @@ const Nav = () => {
           ${isScrolled ? 'bg-white shadow-md border-b border-gray-100' : 'bg-transparent'}
         `}
       >
-        <div className="font-bold text-primary text-xl z-20000 lg:mr-50">ZAKR</div>
+        <div className="font-bold text-primary text-xl z-20000 lg:mr-50 rtl:lg:ml-50 rtl:lg:mr-0">{t('landingPage.navbar.logo')}</div>
 
         <div
           className={`
@@ -88,20 +91,22 @@ const Nav = () => {
         >
           <ul className="gap-5 mb-10 lg:mb-0 text-black flex flex-col text-left mt-20 lg:flex-row lg:mt-0 lg:gap-8 lg:text-center lg:items-center">
             
-            <Navli title="Home" onClick={() => setIsOpen(!isOpen)} href="#home" isActive={activeSection === 'home'} className=" lg:hover:text-blue-500" />
+            <Navli title={t('landingPage.navbar.home')} onClick={() => setIsOpen(!isOpen)} href="#home" isActive={activeSection === 'home'} className=" lg:hover:text-blue-500" />
             <hr className="border-primary w-full lg:hidden" />
-            <Navli title="Services" onClick={() => setIsOpen(!isOpen)} href="#services" isActive={activeSection === 'services'} className=" lg:hover:text-blue-500" />
+            <Navli title={t('landingPage.navbar.Services')} onClick={() => setIsOpen(!isOpen)} href="#services" isActive={activeSection === 'services'} className=" lg:hover:text-blue-500" />
             <hr className="border-primary w-full lg:hidden" />
-            <Navli title="Pricing" onClick={() => setIsOpen(!isOpen)} href="#pricing" isActive={activeSection === 'pricing'} className=" lg:hover:text-blue-500" />
+            <Navli title={t('landingPage.navbar.Pricing')} onClick={() => setIsOpen(!isOpen)} href="#pricing" isActive={activeSection === 'pricing'} className=" lg:hover:text-blue-500" />
             <hr className="border-primary w-full lg:hidden" />
-              <Navli title="FAQs" onClick={() => setIsOpen(!isOpen)} href="#FAQs" isActive={activeSection === 'FAQs'} className=" lg:hover:text-blue-500" />
+              <Navli title={t('landingPage.navbar.FAQs')} onClick={() => setIsOpen(!isOpen)} href="#FAQs" isActive={activeSection === 'FAQs'} className=" lg:hover:text-blue-500" />
             <hr className="border-primary w-full lg:hidden" />
-            <Navli title="Contact" onClick={() => setIsOpen(!isOpen)} href="#contact" isActive={activeSection === 'contact'} className=" lg:hover:text-blue-500" />
+            <Navli title={t('landingPage.navbar.Contact')} onClick={() => setIsOpen(!isOpen)} href="#contact" isActive={activeSection === 'contact'} className=" lg:hover:text-blue-500" />
             <hr className="border-primary w-full lg:hidden" />
           
           </ul>
           <Cta />
         </div>
+
+                     <LanguageSwitcher classname='mx-2 text-primary outline-none lg:w-36 z-100' />
 
         <Buttoncomp
           title=""
@@ -111,7 +116,10 @@ const Nav = () => {
           {isOpen ? <X /> : <Menu />}
         </Buttoncomp>
 
-        <Circle className={`rounded-es-full w-18 h-18 lg:hidden top-0 right-0 ${isScrolled ? 'hidden' : ''}`} />
+    
+      
+
+        <Circle className={`rounded-es-full w-18 h-18 lg:hidden top-0 rtl:left-0 ltr:right-0 ${isScrolled ? 'hidden' : ''}`} />
       </nav>
     </>
   );

@@ -185,6 +185,10 @@
 
 
 
+html[dir="rtl"] body {
+  text-align: right;
+}
+
 html {
   scroll-behavior: smooth;
 }

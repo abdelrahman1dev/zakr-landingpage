@@ -1,0 +1,137 @@
+{
+  "landingPage": {
+    "metadata": {
+      "title": "zakr educational platform",
+      "description": "A platform for educational resources and tools"
+    },
+        "testimonialSection": {
+      "title": "What people think about us?",
+      "reviews": {
+        "p1": {
+          "name": "John Doe",
+          "text": "This product is amazing! It has changed my life ."
+        },
+        "p2": {
+          "name": "Jane Smith",
+          "text": "I love this! Highly recommend it to everyone."
+        },
+        "p3": {
+          "name": "Alice Johnson",
+          "text": "A fantastic experience! Will definitely use this again."
+        },
+        "p4": {
+          "name": "Michael Brown",
+          "text": "This is the best service I've ever used i will try it again."
+        },
+        "p5": {
+          "name": "Emily Davis",
+          "text": "I had a wonderful experience!"
+        }
+      }
+
+    },
+    "navbar": {
+      "logo": "ZAKR",
+      "home": "home",
+      "Services": "Services",
+      "Pricing": "Pricing",
+      "FAQs": "FAQs",
+      "Contact": "Contact"
+    },
+    "heroSection": {
+      "heroTitle": "Master Your Time, Maximize Your Potential",
+      "heroSubtitle": "Take control of your study life with smart scheduling, visual timelines, and real-time progress tracking — all in one place",
+      "heroSubtitle2": "#1 for your academic journey",
+      "heroButton": "Explore Now !"
+    },
+     
+      "faqSection": {
+        "title": "FAQs",
+        "questions": {
+          "q1": "What is your return policy?",
+          "a1": "Our return policy lasts 30 days...",
+          "q2": "How do I track my order?",
+          "a2": "You can track your order using the tracking link...",
+          "q3": "Do you offer international shipping?",
+          "a3": "Yes, we offer international shipping to select countries..."
+        }
+      },
+    "benefitsSection": {
+      "title": "Why Choose This System?",
+      "features": {
+        "1": {
+          "title": "Efficient Planning",
+          "description": "Organize and schedule study sessions effectively"
+        },
+        "2": {
+          "title": "Group Support",
+          "description": "Collaborate with classmates and mentors"
+        },
+        "3": {
+          "title": "All-In-One Resources",
+          "description": "Access all materials from one place"
+        },
+        "4": {
+          "title": "Intelligent Insights",
+          "description": "Provides personalized insights and recommendations"
+        },
+        "5": {
+          "title": "Robust Security",
+          "description": "Ensures your data is protected with industry-leading security"
+        },
+        "6": {
+          "title": "Motivation",
+          "description": "Track progress and earn achievements"
+        }
+      }
+    },
+    "pricingSection": {
+      "title": "choose the right plan for you!",
+      "starterPlan": {
+        "title": "starter",
+        "price": "Free",
+        "features": {
+          "feature1": "Access to basic courses",
+          "feature2": "Community forum",
+          "feature3": "Mobile-friendly learning"
+        },
+        "buttonText": "Get Started"
+      },
+      "premiumPlan": {
+        "title": "Premium Plan",
+        "price": "$5.99/mo",
+        "features": {
+          "feature1": "All Starter features",
+          "feature2": "Quizzes & certifications",
+          "feature3": "Live classes & replays",
+          "feature4": "Progress tracking dashboard"
+        },
+        "buttonText": "Upgrade Now"
+      },
+      "elitePlan": {
+        "title": "Elite Plan",
+        "price": "$9.99/mo",
+        "features": {
+          "feature1": "All Premium features",
+          "feature2": "Personalized mentorship",
+          "feature3": "Exclusive webinars",
+          "feature4": "Offline downloads"
+        },
+        "buttonText": "Go Elite"
+      },
+      "specialDiscount": "Special discounts available for schools & institutions",
+      "learnMore": "learn more"
+      
+    },
+        "ctaSection": {
+      "subtitle": "call us now!",
+      "title": "ready to level up your academic quality ?",
+      "description": "We are here to help you achieve your academic goals with our comprehensive system. Whether you need assistance with assignments, exam preparation, or any other academic challenges.",
+      "registerButton": "register now!",
+      "learnMoreButton": "learn more"
+    }
+
+    }
+
+    }
+  

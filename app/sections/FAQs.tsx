@@ -5,30 +5,32 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import React from 'react'
+import { useTranslation } from '../hooks/useTranslation';
 
 function FAQs() {
+  const { t } = useTranslation();
   return (
-    <section className="container mx-auto px-2 lg:px-20 py-8 bg-card" id="FAQs">
-      <h2 className="highlight bold text-4xl w-fit ">FAQs</h2>
+    <section className="container rtl:text-right mx-auto px-2 lg:px-20 py-8 bg-card" id="FAQs">
+      <h2 className="highlight bold text-4xl w-fit ">{t('landingPage.faqSection.title')}</h2>
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
-          <AccordionTrigger>What is your return policy?</AccordionTrigger>
+          <AccordionTrigger>{t('landingPage.faqSection.questions.q1')}</AccordionTrigger>
           <AccordionContent>
-            <p>Our return policy lasts 30 days...</p>
+            <p>{t('landingPage.faqSection.questions.a1')}</p>
           </AccordionContent>
         </AccordionItem>
         <hr  className="border-t border-gray-200 my-2"/>
         <AccordionItem value="item-2">
-          <AccordionTrigger>How do I track my order?</AccordionTrigger>
+          <AccordionTrigger>{t('landingPage.faqSection.questions.q2')}</AccordionTrigger>
           <AccordionContent>
-            <p>You can track your order using the tracking link...</p>
+            <p>{t('landingPage.faqSection.questions.a2')}</p>
           </AccordionContent>
         </AccordionItem>
         <hr  className="border-t border-gray-200 my-2"/>
         <AccordionItem value="item-3">
-          <AccordionTrigger>Do you offer international shipping?</AccordionTrigger>
+          <AccordionTrigger>{t('landingPage.faqSection.questions.q3')}</AccordionTrigger>
           <AccordionContent>
-            <p>Yes, we offer international shipping to select countries...</p>
+            <p>{t('landingPage.faqSection.questions.a3')}</p>
           </AccordionContent>
         </AccordionItem>
         <hr  className="border-t border-gray-200 my-2"/>

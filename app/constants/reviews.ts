@@ -4,33 +4,33 @@ export const reviews = [
 
     {
         "id": 1,
-        "name": "John Doe",
-        "image": '/assets/person1.jpg',
-        "review": "This product is amazing! It has changed my life .",
+        "name": "",
+        "image": 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        "review": "",
     },
     {
         "id": 2,
-        "name": "Jane Smith",
-        "image": '/assets/person2.jpg',
-        "review": "I love this! Highly recommend it to everyone.",
+        "name": "",
+        "image": 'https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=999&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        "review": "",
     }, 
     {
         "id": 3,
-        "name": "Alice Johnson",
-        "image": '/assets/person3.jpg',
-        "review": "A fantastic experience! Will definitely use this again.",
+        "name": "",
+        "image": 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=761&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        "review": "",
     },
     {
         "id": 4,
-        "name": "Michael Brown",
-        "image": '/assets/person4.jpg',
-        "review": "This is the best service I've ever used i will try it again.",
+        "name": "",
+        "image": 'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        "review": "",
     },
     {
         "id": 5,
-        "name": "Emily Davis",
-        "image": '/assets/person5.jpg',
-        "review": "I had a wonderful experience!",
+        "name": "",
+        "image": 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        "review": "",
     }
 
 ]
