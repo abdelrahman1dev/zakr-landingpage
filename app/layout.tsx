@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "./components/Nav";
-import {Footer7} from "./components/Footer";
+import Footer from "./components/Footer";
 import { LanguageProvider } from "./components/LanguageProvider";
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function RootLayout({
         <LanguageProvider>
           <Nav />
           {children}
-          <Footer7 />
+          <Footer />
         </LanguageProvider>
       </body>
     </html>
